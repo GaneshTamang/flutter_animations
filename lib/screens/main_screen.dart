@@ -27,7 +27,6 @@ class _MainScreenState extends State<MainScreen> {
             buttonNAme: 'Transform ',
             pageClass: MCTransformAnimationExample(),
           ),
-          CustomRoatatingContainer(),
         ],
       ),
     );
