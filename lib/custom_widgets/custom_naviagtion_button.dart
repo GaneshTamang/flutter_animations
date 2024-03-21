@@ -14,17 +14,22 @@ class MCMaterialButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Material(
-        child: MaterialButton(
-          color: Colors.blueAccent,
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) => pageClass,
-                ));
-          },
-          child: Text(buttonNAme),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Material(
+          // ! 100% opacity
+          color: const Color(0x00000000),
+          child: MaterialButton(
+            color: Colors.blueAccent,
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => pageClass,
+                  ));
+            },
+            child: Text(buttonNAme),
+          ),
         ),
       ),
     );
