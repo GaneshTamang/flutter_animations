@@ -27,6 +27,7 @@ class _MCAnimatedContainerExampleState
         title: const Text('AnimatedContainer'),
       ),
       body: Center(
+        // !implicit animation
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 500),
           curve: Curves.easeInOut, // Adjust timing curve as needed
