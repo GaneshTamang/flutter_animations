@@ -13,9 +13,20 @@ class _MCTransformAnimationExampleState
     extends State<MCTransformAnimationExample> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const MCAppBAr(appBarTitle: "appBarTitle"),
-      body: Container(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: const MCAppBAr(appBarTitle: "appBarTitle"),
+        body: Center(
+          child: Container(
+            height: 200,
+            width: 200,
+            decoration: BoxDecoration(
+              color: const Color(0xFF4B371C),
+              borderRadius: BorderRadius.circular(20),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
