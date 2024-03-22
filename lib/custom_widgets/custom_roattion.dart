@@ -17,8 +17,11 @@ class _CustomRoatatingContainerState extends State<CustomRoatatingContainer>
   // ! initizlization for animations
   @override
   void initState() {
-    _controller =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 150));
+    _controller = AnimationController(
+        vsync: this,
+        duration: const Duration(
+          seconds: 5,
+        ));
     _aniamtion = Tween<double>(begin: 0, end: 2 * pi).animate(_controller);
     _controller.repeat();
     super.initState();

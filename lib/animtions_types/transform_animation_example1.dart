@@ -4,17 +4,17 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_animations/custom_widgets/app_bar.dart';
 
-class MCTransformAnimationExample extends StatefulWidget {
-  const MCTransformAnimationExample({super.key});
+class MCTransformAnimationExample1 extends StatefulWidget {
+  const MCTransformAnimationExample1({super.key});
 
   @override
-  State<MCTransformAnimationExample> createState() =>
-      _MCTransformAnimationExampleState();
+  State<MCTransformAnimationExample1> createState() =>
+      _MCTransformAnimationExample1State();
 }
 
-class _MCTransformAnimationExampleState
+class _MCTransformAnimationExample1State
 // ! singleTickerProviderState mixin for vsync
-    extends State<MCTransformAnimationExample>
+    extends State<MCTransformAnimationExample1>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late final Animation _animation;
