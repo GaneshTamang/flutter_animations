@@ -21,15 +21,12 @@ class _TestTransformationState extends State<TestTransformation>
         seconds: 3,
       ),
     );
-    _animation = Tween<double>(begin: 0, end: 100).animate(
+    _animation = Tween<double>(begin: -100, end: 0).animate(
       CurvedAnimation(
         parent: _controller,
         curve: Curves.bounceInOut,
       ),
     );
-    _animation.addListener(() {
-      print("value :${_animation.value}");
-    });
 
     super.initState();
   }
@@ -44,7 +41,7 @@ class _TestTransformationState extends State<TestTransformation>
   Widget build(BuildContext context) {
     _controller
       ..reset()
-      ..reverse();
+      ..repeat();
 
     return Scaffold(
       body: Stack(
@@ -59,8 +56,8 @@ class _TestTransformationState extends State<TestTransformation>
             animation: _controller,
             builder: (context, child) {
               return Positioned(
-                bottom: _controller.value * 1,
-                left: _controller.value * 100,
+                bottom: _animation.value,
+                left: _animation.value + 50,
                 child: Container(
                   height: 250,
                   width: 250,
@@ -76,56 +73,12 @@ class _TestTransformationState extends State<TestTransformation>
                       ),
                       fit: BoxFit.cover,
                     ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.blueGrey,
-                        offset: Offset(18, -15),
-                        blurRadius: 10,
-                        spreadRadius: 12,
-                      )
-                    ],
                   ),
                 ),
               );
             },
           )
         ],
-      ),
-    );
-  }
-}
-
-class MyImageForAnimation extends StatelessWidget {
-  const MyImageForAnimation({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      bottom: 5,
-      left: 100,
-      child: Container(
-        height: 250,
-        width: 250,
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(15),
-            topRight: Radius.circular(15),
-          ),
-          image: DecorationImage(
-            image: AssetImage('images/colz.jpg'),
-            fit: BoxFit.cover,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.blueGrey,
-              offset: Offset(5, 10),
-              blurRadius: 10,
-              spreadRadius: 12,
-            )
-          ],
-        ),
       ),
     );
   }
