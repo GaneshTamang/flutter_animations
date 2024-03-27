@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/animtions_types_exmples/hero_animation_hero_example4.dart';
 import 'package:flutter_animations/animtions_types_exmples/three_d_animations_example3.dart';
-import 'package:flutter_animations/animtions_types_exmples/animated_container_example.dart';
+import 'package:flutter_animations/animtions_types_exmples/animated_container_example0.dart';
 import 'package:flutter_animations/animtions_types_exmples/example2.dart';
 import 'package:flutter_animations/animtions_types_exmples/test_transformation.dart';
 import 'package:flutter_animations/animtions_types_exmples/transform_animation_example1.dart';
@@ -36,6 +37,10 @@ class MainScreen extends StatelessWidget {
             MCMaterialButton(
               buttonNAme: '3d animation ',
               pageClass: ThreeDAnimationExample3(),
+            ),
+            MCMaterialButton(
+              buttonNAme: 'Explicit customAnimation ',
+              pageClass: HeroAnimationExample4(),
             ),
           ],
         ),
