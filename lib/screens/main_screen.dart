@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/animation_types_example/hero_animation_hero_example4.dart';
-import 'package:flutter_animations/animation_types_example/three_d_animations_example3.dart';
-import 'package:flutter_animations/animation_types_example/animated_container_example0.dart';
-import 'package:flutter_animations/animation_types_example/example2.dart';
-import 'package:flutter_animations/animation_types_example/test_transformation.dart';
-import 'package:flutter_animations/animation_types_example/transform_animation_example1.dart';
+import 'package:flutter_animations/ani_type_explicit/hero_animation_hero_example4.dart';
+import 'package:flutter_animations/ani_type_explicit/three_d_animations_example3.dart';
+import 'package:flutter_animations/ani_type_explicit/animated_container_example0.dart';
+import 'package:flutter_animations/ani_type_explicit/example2.dart';
+import 'package:flutter_animations/ani_type_explicit/test_transformation.dart';
+import 'package:flutter_animations/ani_type_explicit/transform_animation_example1.dart';
 import 'package:flutter_animations/custom_widgets/custom_naviagtion_button.dart';
 
 class MainScreen extends StatelessWidget {

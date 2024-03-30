@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/animation_types_example/implicit_aniamtions_example5.dart';
+import 'package:flutter_animations/ani_implicit_animations/implicit_aniamtions_example5.dart';
 
 void main() {
   runApp(const MyApp());

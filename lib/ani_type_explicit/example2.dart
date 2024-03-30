@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import 'package:flutter_animations/additional_animation_classes/custom_clipper.dart';
+import 'package:flutter_animations/additional_explicit_ani/custom_clipper.dart';
 
 class Example2 extends StatefulWidget {
   const Example2({super.key});
