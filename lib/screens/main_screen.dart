@@ -4,7 +4,7 @@ import 'package:flutter_animations/ani_implicit_animations/custom_clipper_clippa
 import 'package:flutter_animations/anim_type_explicit/hero_animation_hero_example4.dart';
 import 'package:flutter_animations/anim_type_explicit/three_d_animations_example3.dart';
 
-import 'package:flutter_animations/anim_type_explicit/example2.dart';
+import 'package:flutter_animations/anim_type_explicit/_transom_flip_example2.dart';
 import 'package:flutter_animations/anim_type_explicit/test_transformation.dart';
 import 'package:flutter_animations/anim_type_explicit/transform_animation_example1.dart';
 import 'package:flutter_animations/custom_widgets/custom_naviagtion_button.dart';
