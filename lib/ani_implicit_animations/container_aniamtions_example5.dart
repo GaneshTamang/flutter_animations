@@ -1,15 +1,15 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-class MYIMplicitExample5 extends StatefulWidget {
-  const MYIMplicitExample5({super.key});
+class MYIMplicitContainerExample5 extends StatefulWidget {
+  const MYIMplicitContainerExample5({super.key});
 
   @override
-  State<MYIMplicitExample5> createState() => _MYIMplicitExample5State();
+  State<MYIMplicitContainerExample5> createState() =>
+      _MYIMplicitContainerExample5State();
 }
 
-class _MYIMplicitExample5State extends State<MYIMplicitExample5> {
+class _MYIMplicitContainerExample5State
+    extends State<MYIMplicitContainerExample5> {
   bool _isZoomedIn = false;
   final double _defaultWidth = 100;
   final Curve _zoomInCurve = Curves.bounceInOut;

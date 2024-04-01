@@ -135,9 +135,10 @@ class _Example2State extends State<Example2>
                         alignment: Alignment.centerRight,
                         transform: Matrix4.identity()
                           ..rotateY(_flipAnimation.value),
+                        // ! custom clipper shape
                         child: ClipPath(
                           clipper: MyHalfCircle(
-                              mySidetoDraw: MyCustomCircleSide.left),
+                              mySidetoDraw: MyCustomCircleSideToDraw.left),
                           child: Container(
                             height: 100,
                             width: 100,
@@ -158,7 +159,7 @@ class _Example2State extends State<Example2>
                           ..rotateY(_flipAnimation.value),
                         child: ClipPath(
                           clipper: MyHalfCircle(
-                              mySidetoDraw: MyCustomCircleSide.right),
+                              mySidetoDraw: MyCustomCircleSideToDraw.right),
                           child: Container(
                             height: 100,
                             width: 100,
@@ -191,7 +192,7 @@ class MyCircle extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ClipPath(
-          clipper: MyHalfCircle(mySidetoDraw: MyCustomCircleSide.left),
+          clipper: MyHalfCircle(mySidetoDraw: MyCustomCircleSideToDraw.left),
           child: Container(
             height: 100,
             width: 100,
@@ -201,7 +202,7 @@ class MyCircle extends StatelessWidget {
           ),
         ),
         ClipPath(
-          clipper: MyHalfCircle(mySidetoDraw: MyCustomCircleSide.right),
+          clipper: MyHalfCircle(mySidetoDraw: MyCustomCircleSideToDraw.right),
           child: Container(
             height: 100,
             width: 100,

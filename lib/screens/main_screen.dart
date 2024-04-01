@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/ani_type_explicit/hero_animation_hero_example4.dart';
-import 'package:flutter_animations/ani_type_explicit/three_d_animations_example3.dart';
-import 'package:flutter_animations/ani_type_explicit/animated_container_example0.dart';
-import 'package:flutter_animations/ani_type_explicit/example2.dart';
-import 'package:flutter_animations/ani_type_explicit/test_transformation.dart';
-import 'package:flutter_animations/ani_type_explicit/transform_animation_example1.dart';
+import 'package:flutter_animations/ani_implicit_animations/container_aniamtions_example5.dart';
+import 'package:flutter_animations/ani_implicit_animations/custom_clipper_clippath_color_tween_example6.dart';
+import 'package:flutter_animations/anim_type_explicit/hero_animation_hero_example4.dart';
+import 'package:flutter_animations/anim_type_explicit/three_d_animations_example3.dart';
+
+import 'package:flutter_animations/anim_type_explicit/example2.dart';
+import 'package:flutter_animations/anim_type_explicit/test_transformation.dart';
+import 'package:flutter_animations/anim_type_explicit/transform_animation_example1.dart';
 import 'package:flutter_animations/custom_widgets/custom_naviagtion_button.dart';
 
 class MainScreen extends StatelessWidget {
@@ -46,10 +48,6 @@ class MyExplicitAniMations extends StatelessWidget {
               pageClass: TestTransformation(),
             ),
             MCMaterialButton(
-              buttonNAme: 'AnimatedContainer',
-              pageClass: MCAnimatedContainerExample(),
-            ),
-            MCMaterialButton(
               buttonNAme: 'Transform Example1',
               pageClass: MCTransformAnimationExample1(),
             ),
@@ -58,11 +56,11 @@ class MyExplicitAniMations extends StatelessWidget {
               pageClass: Example2(),
             ),
             MCMaterialButton(
-              buttonNAme: '3d animation ',
+              buttonNAme: '3d box animation example 3 ',
               pageClass: ThreeDAnimationExample3(),
             ),
             MCMaterialButton(
-              buttonNAme: 'Explicit customAnimation ',
+              buttonNAme: 'hero Explicit Animation example 4 ',
               pageClass: HeroAnimationExample4(),
             ),
           ],
@@ -83,8 +81,12 @@ class MyImplicitAnimations extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           MCMaterialButton(
-            buttonNAme: 'Explicit customAnimation ',
-            pageClass: MyImplicitAnimations(),
+            buttonNAme: 'implicit Container ',
+            pageClass: MYIMplicitContainerExample5(),
+          ),
+          MCMaterialButton(
+            buttonNAme: "Color Tween Animation",
+            pageClass: MyClipPathAndColorTweenAnimationExample6(),
           ),
         ],
       ),
