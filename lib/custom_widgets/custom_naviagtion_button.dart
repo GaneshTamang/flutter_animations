@@ -13,7 +13,7 @@ class MCMaterialButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 100),
+      padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 20),
       child: Material(
         // ! 100% opacity
         color: const Color(0x00000000),
@@ -26,7 +26,16 @@ class MCMaterialButton extends StatelessWidget {
                   builder: (BuildContext context) => pageClass,
                 ));
           },
-          child: Text(buttonNAme),
+          child: Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Text(
+              buttonNAme,
+              style: const TextStyle(
+                fontSize: 16,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
         ),
       ),
     );

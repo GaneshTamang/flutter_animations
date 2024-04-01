@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 // !Enum for clipper
-enum MyCustomCircleSide { left, right }
+enum MyCustomCircleSideToDraw { left, right }
 
 // ! extension of path to clipper
 // ! created drawer but widget is not created yet
-extension ToPath on MyCustomCircleSide {
+extension ToPath on MyCustomCircleSideToDraw {
   Path toPath(Size widgetSize) {
-    final pathTODrawArc = Path();
+    final Path pathTODrawArc = Path();
     late Offset offset;
     late bool penMovementClockwiseOrAnti;
     switch (this) {
-      case MyCustomCircleSide.left:
+      case MyCustomCircleSideToDraw.left:
         /*
          * for x pencil moving position from where we need to clip offfset
          !for left side  clipping circle
@@ -38,7 +38,7 @@ extension ToPath on MyCustomCircleSide {
          * |_________________|
          * **   (0 in x, and Y distance in Y ) so to  offset at  which distance pen stops to clip (x,y)
          */
-      case MyCustomCircleSide.right:
+      case MyCustomCircleSideToDraw.right:
         // ? we move the pencil or pen  to tell from where to start clipping
         pathTODrawArc.moveTo(0, 0);
         // ? at which offset point pen stops width and height
@@ -61,7 +61,7 @@ extension ToPath on MyCustomCircleSide {
 
 // ! now draw widget
 class MyHalfCircle extends CustomClipper<Path> {
-  final MyCustomCircleSide mySidetoDraw;
+  final MyCustomCircleSideToDraw mySidetoDraw;
   // !costructor to choose side to draw from enum
 
   MyHalfCircle({required this.mySidetoDraw});

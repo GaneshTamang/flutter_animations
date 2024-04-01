@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/animation_types_example/implicit_aniamtions_example5.dart';
+import 'package:flutter_animations/screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: const MYIMplicitExample5(),
+      home: const MainScreen(),
     );
   }
 }
