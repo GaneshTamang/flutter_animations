@@ -43,7 +43,7 @@ class _MyCustomPainterExample7State extends State<MyCustomPainterExample7>
           CurveTween(curve: Curves.bounceInOut),
         )
         .animate(_radiusController);
-// * rotarioncontroller
+// * rotationcontroller
     _rotationController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 3),

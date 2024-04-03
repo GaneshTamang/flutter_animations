@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/screens/main_screen.dart';
+import 'package:flutter_animations/additional_explicit_ani/testing.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: const Color(0xFF696969),
         appBarTheme: const AppBarTheme(
-          backgroundColor: Color.fromARGB(255, 66, 65, 65),
+          color: Color.fromARGB(255, 65, 92, 97),
           centerTitle: true,
         ),
       ),
-      home: const MainScreen(),
+      home: const DraggExample(),
     );
   }
 }
