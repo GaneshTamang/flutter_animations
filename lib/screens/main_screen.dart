@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/additional_explicit_ani/my_textanimation.dart';
 import 'package:flutter_animations/ani_type_implicit/container_aniamtions_example5.dart';
 import 'package:flutter_animations/ani_type_implicit/custom_clipper_clippath_color_tween_example6.dart';
 import 'package:flutter_animations/anim_type_explicit/animated_prompt_box_example9.dart';
@@ -46,8 +47,12 @@ class MyExplicitAniMations extends StatelessWidget {
         child: ListView(
           children: const [
             MCMaterialButton(
-              buttonNAme: "My Test Tansformations",
+              buttonNAme: "My bounce animation test",
               pageClass: BouncingBall(),
+            ),
+            MCMaterialButton(
+              buttonNAme: "My Text Animation",
+              pageClass: MyTextAnimation(),
             ),
             MCMaterialButton(
               buttonNAme: 'Transform Example1',
