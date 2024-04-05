@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/ani_implicit_animations/container_aniamtions_example5.dart';
-import 'package:flutter_animations/ani_implicit_animations/custom_clipper_clippath_color_tween_example6.dart';
+import 'package:flutter_animations/ani_type_implicit/container_aniamtions_example5.dart';
+import 'package:flutter_animations/ani_type_implicit/custom_clipper_clippath_color_tween_example6.dart';
+import 'package:flutter_animations/anim_type_explicit/animated_prompt_box_example9.dart';
 import 'package:flutter_animations/anim_type_explicit/custom_painter_example7.dart';
+import 'package:flutter_animations/anim_type_explicit/draggable_drawer_example8.dart';
 import 'package:flutter_animations/anim_type_explicit/hero_animation_hero_example4.dart';
 import 'package:flutter_animations/anim_type_explicit/three_d_animations_example3.dart';
 import 'package:flutter_animations/anim_type_explicit/_transom_flip_example2.dart';
-import 'package:flutter_animations/anim_type_explicit/test_transformation.dart';
+import 'package:flutter_animations/additional_explicit_ani/bounce.dart';
 import 'package:flutter_animations/anim_type_explicit/transform_animation_example1.dart';
 import 'package:flutter_animations/custom_widgets/custom_naviagtion_button.dart';
 
@@ -45,7 +47,7 @@ class MyExplicitAniMations extends StatelessWidget {
           children: const [
             MCMaterialButton(
               buttonNAme: "My Test Tansformations",
-              pageClass: TestTransformation(),
+              pageClass: BouncingBall(),
             ),
             MCMaterialButton(
               buttonNAme: 'Transform Example1',
@@ -53,7 +55,7 @@ class MyExplicitAniMations extends StatelessWidget {
             ),
             MCMaterialButton(
               buttonNAme: 'Clipper Example2',
-              pageClass: Example2(),
+              pageClass: ClipSemiCircleFlipRotateExample2(),
             ),
             MCMaterialButton(
               buttonNAme: '3d box animation example 3 ',
@@ -66,6 +68,14 @@ class MyExplicitAniMations extends StatelessWidget {
             MCMaterialButton(
               buttonNAme: 'Custom painter and  Animation example 7 ',
               pageClass: MyCustomPainterExample7(),
+            ),
+            MCMaterialButton(
+              buttonNAme: ' Animation dragable drawer animation example 8',
+              pageClass: MyMainDragableDrawerScreen(),
+            ),
+            MCMaterialButton(
+              buttonNAme: ' interactive prompt animation example 9',
+              pageClass: AnimatedPrompt(),
             ),
           ],
         ),
@@ -89,7 +99,7 @@ class MyImplicitAnimations extends StatelessWidget {
             pageClass: MYIMplicitContainerExample5(),
           ),
           MCMaterialButton(
-            buttonNAme: "Color Tween Animation exampple6",
+            buttonNAme: "Color Tween Animation example 6",
             pageClass: MyClipPathAndColorTweenAnimationExample6(),
           ),
         ],

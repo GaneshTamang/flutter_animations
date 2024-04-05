@@ -2,13 +2,14 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import 'package:flutter_animations/additional_explicit_ani/custom_clipper.dart';
+import 'package:flutter_animations/custom_widgets/custom_clipper.dart';
 
-class Example2 extends StatefulWidget {
-  const Example2({super.key});
+class ClipSemiCircleFlipRotateExample2 extends StatefulWidget {
+  const ClipSemiCircleFlipRotateExample2({super.key});
 
   @override
-  State<Example2> createState() => _Example2State();
+  State<ClipSemiCircleFlipRotateExample2> createState() =>
+      _ClipSemiCircleFlipRotateExample2State();
 }
 // ! extenstion is the process of extending a  class char without inheriting the widget
 
@@ -21,7 +22,8 @@ extension on VoidCallback {
   }
 }
 
-class _Example2State extends State<Example2>
+class _ClipSemiCircleFlipRotateExample2State
+    extends State<ClipSemiCircleFlipRotateExample2>
 // ! mixin for class here removed single since we using multiple animations
 
     with
