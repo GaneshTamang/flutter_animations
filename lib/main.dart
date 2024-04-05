@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/additional_explicit_ani/testing.dart';
+import 'package:flutter_animations/screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
       ),
-      home: const DraggExample(),
+      home: const MainScreen(),
     );
   }
 }
